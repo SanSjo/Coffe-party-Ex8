@@ -7,7 +7,7 @@
     <title>Document</title>
       <!-- Bootstrap core CSS -->
       <link rel="stylesheet" href="style.css">
-    <link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- <link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 </head>
 <body>
@@ -32,7 +32,7 @@
         </div>
         <nav class="navbar navbar-expand-lg">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img class="logo" src="https://www.flaticon.com/svg/vstatic/svg/2366/2366518.svg?token=exp=1613763719~hmac=38db51efa2ea306bdaa4b4850756efe0" alt="">Kaffeparty</a>
+            <a class="navbar-brand" href="index.html"><img class="logo" src="https://www.flaticon.com/svg/vstatic/svg/2366/2366518.svg?token=exp=1613763719~hmac=38db51efa2ea306bdaa4b4850756efe0" alt="">Kaffeparty</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -63,21 +63,37 @@
             </div>
         </nav>
       </header>
-      <section class="row justify-content-md-center" >
+      
+      <section class="row d-flex flex-column align-content-md-center " >
         
-        <div class="col-lg-6 col-md-8 mx-auto mb-3 " style="width: 80%; padding: 0px;">
+        <div class="col-lg-6 mx-auto mb-5 px-0"   >
           <!-- <img src="https://images.unsplash.com/photo-1514163161321-f4f7c2a90296?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzF8fGNvZmZlZXxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=500&q=60" height="400px" width="100%" class="card-img-top" alt="..."> -->
+          
+          <div class="about-card" >
 
-          <div class="about-card">
             <h3 class="party-title">Vår historia, från böna till kaffeparty!</h3>
             <div>
-              <p class="about-card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore. This content is a little bit longer. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
-              <p class="about-card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+              <p class="about-card-text text-center px-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore. This content is a little bit longer. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+              <!-- <p class="about-card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p> -->
           </div>
           </div>
         </div>
       </section>
-      <section class="row justify-content-md-evenly">
+      <section class="row d-flex flex-row justify-content-center  mb-4">
+        <div class="contact-card pt-5">
+
+          <h5 class="party-title text-center pt-5">Kontakta Kaffeparty</h5>
+          <div class="text-center">
+            <p class="about-card-text">Kaffevägen 1</p>
+            <p class="about-card-text">123 45 Stockholm</p>
+            <p class="about-card-text">08-123 456 78</p>
+            <p class="about-card-text">hello@kaffeparty.se</p>
+            <button class="contact-button">Vägbeskrivning</button>
+            <!-- <p class="about-card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p> -->
+        </div>
+        </div>
+      </section>
+      <section class="container" >
         <!-- <div class="card" style="width: 18rem;">
           <img src="https://images.unsplash.com/photo-1500928791219-72d6682831e8?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTAwfHxjb2ZmZWUlMjB3b3JrfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" height="328px" class="card-img-top" alt="...">
           <div class="card-body">
@@ -93,35 +109,38 @@
             <a href="#" class="card-link">Facebook</a>
           </div>
         </div> -->
-        <div class="card col-lg-6 col-md-8 mx-auto " style="width: 18rem;">
+        <div class="row justify-content-md-center" >
+        <div class="card col-sm col-md-6 m-4 " style="width: 20rem">
           <div class="card-body">
             <h5 class="card-title">VD och grundare</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
           </div>
-          <img src="https://images.unsplash.com/photo-1531590878845-12627191e687?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" class="card-img-top" alt="...">
+          <img src="https://images.unsplash.com/photo-1531590878845-12627191e687?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" height="350px" class="card-img-top" alt="...">
 
-          <ul class="list-group list-group-flush">
+          <ul class="list-group list-group-flush text-center">
             <li class="list-group-item">vd@kaffeparty.se</li>
             <li class="list-group-item">0777666555</li>
           </ul>
           
         </div>
-        <div class="card col-lg-6 col-md-8 mx-auto" style="width: 18rem;">
+        <div class="card col-sm col-md-6 m-4 " style="width: 20rem">
           <div class="card-body">
             <h5 class="card-title">HR-chef</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
           </div>
-          <img src="https://images.unsplash.com/photo-1487309078313-fad80c3ec1e5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=80" height="328px"class="card-img-top" alt="...">
+          <img src="https://images.unsplash.com/photo-1487309078313-fad80c3ec1e5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=80" height="350px"class="card-img-top" alt="...">
 
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">hr@kaffeparty.se</li>
+          <ul class="list-group list-group-flush text-center">
+            <li class="list-group-item">@ hr@kaffeparty.se</li>
             <li class="list-group-item">0777555666</li>
           </ul>
          
         </div>
+      </div>
       </section>
+      
 
-      <footer class="text-muted py-5">
+      <footer class="text-center py-5">
 
         <div class="row justify-content-md-center">
           
